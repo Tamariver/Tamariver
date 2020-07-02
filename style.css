@@ -1,0 +1,587 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+	font-family: serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+	color: #4b4b4b;
+	background: #fff;
+}
+
+a{
+	color: #69b076;
+	text-decoration: none;
+}
+
+a:hover, .active{
+  text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+
+/* ヘッダー
+------------------------------------------------------------*/
+#mainnav a{
+	color: #4b4b4b;
+    font-family: serif;
+}
+
+
+/* フッター
+------------------------------------------------------------*/
+#footer{
+	clear: both;
+	padding: 50px 10px 50px 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/* 共通
+------------------------------------------------------------*/
+h1, h2{
+    font-family: serif;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+section{
+  clear: both;
+}
+
+section h2{
+	width: 60%;
+	margin: 70px auto;
+	font-size: 30px;
+	font-weight:normal;
+	text-align: center;
+}
+
+section h3{
+	width: 60%;
+	margin: 70px auto;
+	font-size: 25px;
+	font-weight:normal;
+	text-align: center;
+}
+
+section h4{
+	width: 60%;
+	margin: 70px auto;
+	font-size: 20px;
+	font-weight:normal;
+	text-align: center;
+}
+
+section h2 span {
+	padding-bottom: 20px;
+	border-bottom: 3px solid #CAE5CD;
+}
+
+section h3 span {
+	padding-bottom: 20px;
+	border-bottom: 3px solid rgb(248, 229, 140);
+}
+
+section h4 span {
+	padding-bottom: 20px;
+	border-bottom: 3px solid #d7003a;
+}
+
+.inner{
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+#sec02 .inner, #sec03 .inner{
+	border-top: 1px solid #a0a0a0;
+}
+
+#sec03 .inner, #sec04 .inner{
+	border-bottom: 1px solid #a0a0a0;
+}
+
+.innerS{
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+/* SEC01 基本情報
+------------------------------------------------------------*/
+
+ul.main {
+	text-align: center;
+	float: left;
+	position: relative;
+	width: 65%;
+	left: 50%;
+	margin-bottom: 80px;
+}
+
+li.main{
+	position:relative;
+	left:-50%;
+	list-style-type: none;
+	margin: 0 0 10px 0;
+	padding: 10px 30px;
+    line-height: 30px;
+    border-bottom: solid 1px #69b076;
+}
+
+ul.main li.main:before{
+	display: flex;
+    counter-increment: list;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    height: 0;
+    width: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid #69b076;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+/* SEC02 環境
+------------------------------------------------------------*/
+#sec02{
+	padding: 0 !important;
+}
+
+table {
+	margin: 20px auto;
+	width: 50%;
+}
+
+.tbl-r02 th {
+	text-align: center;
+	background: #89c3eb;
+	border: solid 1px #a0d8ef;
+	color: #fff;
+	padding: 10px;
+}
+
+.tbl-r02 td {
+	text-align: center;
+	border: solid 1px #a0d8ef;
+	padding: 10px;
+}
+
+/* SEC03 将来について
+------------------------------------------------------------*/
+.col4 .img{
+	margin: 0 auto;
+}
+
+
+/* SEC04 成果物
+------------------------------------------------------------*/
+#sec04{
+	padding-bottom: 0 !important;
+}
+
+.article{
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+.article img{
+	float: left;
+	margin: 5px 20px 20px;
+}
+
+.article p{
+	margin-bottom: 20px;
+}
+
+.future{
+	text-align: center;
+}
+
+.hoge{
+	text-align:center;
+}
+
+.iframe-wrap {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	overflow:auto; 
+	-webkit-overflow-scrolling:touch;
+	border:2px solid #ccc; 
+}
+
+.iframe-wrap iframe {
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  width:100%;
+	  height:100%;
+	  border:none;
+	  display:block;
+}
+
+.btn-flat-border {
+	margin-bottom: 50px;
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #69b076;
+	border: solid 2px #69b076;
+	border-radius: 3px;
+	transition: .4s;
+}
+  
+.btn-flat-border:hover {
+	background: #69b076;
+	color: white;
+}
+
+.btn {
+	text-align: center;
+}
+
+/* SEC05 大学案内
+------------------------------------------------------------*/
+#sec05 p{
+	margin-bottom: 5px;
+}
+
+.col2 li{
+	display: inline-block;
+	width: 100%;
+  margin: 20px 0;
+}
+
+#map{
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#map iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	border: 0;
+}
+
+.inline-block {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+}
+.inline-block_li {
+	margin-right: 30px;
+	margin-left: 30px;
+	display: inline-block;
+}
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 800px){
+	body{
+		font-size:14px;
+	}
+	
+	#wrapper{
+		width: 100%;
+	}
+	
+	#content{
+		width: 80%;
+	}
+	
+	#sidebar{
+		width: 12%;
+		position: fixed;
+		top: 0;
+		right: 4%;
+		background: #fff;
+	}
+	
+  a#menu{
+		display:none;
+	}	
+
+	.panel{
+		display:block !important;
+	}
+	
+	#sidebar h1{
+		padding: 30px 0;
+	}
+
+	#mainnav li{
+		font-size: 14px;
+		padding: 10px 0;
+	}
+	
+	#sns{
+		margin-top: 50px;
+	}
+	
+	#sns li{
+		display: inline-block;
+		padding-right: 10px;
+	}
+
+	#sns a:hover img{
+		opacity: .8;
+	}
+
+	.col4{
+		text-align: center;
+	}
+
+	.col4 li{
+		display: inline-block;
+		width: 18%;
+		padding: 0 3%;
+		vertical-align: top;
+		text-align: left;
+	}
+	
+	#map iframe{
+		height: 200px !important;
+  }
+	
+  #footer{
+		padding: 30px 10px 70px 0;
+	}
+}
+
+
+@media only screen and (min-width: 641px){
+	.col2 li{
+		width: 60%;
+		vertical-align: top;
+	}
+	.col2 li:first-child{
+		width: 35%;
+		padding-right: 4%;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	.innerS{
+		width: 94%;
+		padding-bottom: 30px;
+	}
+	.article img{
+		float: none;
+		display: block;
+		margin: 0 auto 20px;
+	}
+	#map iframe{
+		width: 96% !important;
+		left: 2%;
+	}
+	.last td:last-child {
+		border-bottom: solid 1px #ccc;
+		width: 100%;
+	}
+	.tbl-r02 {
+		width: 80%;
+	}
+	.tbl-r02 th, .tbl-r02 td {
+		border-bottom: none;
+		display: block;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 799px){
+	#sidebar{
+		position: fixed;
+		width: 100%;
+		z-index:500;
+	}
+	
+	#sidebarWrap{
+		position: relative;
+		width: 100%;
+		height: 60px;
+		background: #fff;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	#sidebar h1{
+		text-align: center;
+		padding-top: 15px;
+	}
+	
+	#sidebar h1 img{
+		width: auto !important;
+		max-height: 35px;
+	}
+	
+  a#menu{
+  	display: inline-block;
+  	position: relative;
+  	width: 40px;
+  	height: 40px;
+  	margin: 10px;
+	}
+
+	#menuBtn{
+  	display: block;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	width: 18px;
+  	height: 2px;
+  	margin: -1px 0 0 -7px;
+  	background: #4b4b4b;
+  	transition: .2s;
+	}
+
+	#menuBtn:before, #menuBtn:after{
+  	display: block;
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 0;
+  	width: 18px;
+  	height: 2px;
+  	background: #4b4b4b;
+  	transition: .3s;
+	}
+
+	#menuBtn:before{
+  	margin-top: -7px;
+	}
+
+	#menuBtn:after{
+  	margin-top: 5px;
+	}
+
+	a#menu .close{
+  	background: transparent;
+	}
+
+	a#menu .close:before, a#menu .close:after{
+  	margin-top: 0;
+	}
+
+	a#menu .close:before{
+  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+	}
+
+	a#menu .close:after{
+  	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+	}
+
+	.panel{
+		width: 100%;
+		display: none;
+		overflow: hidden;
+		position: relative;
+		left: 0;
+		top: -10px;
+		z-index: 100;
+	}
+
+	#mainnav{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		text-align: right;
+	}
+
+	#mainnav ul{
+		border-bottom: 1px solid #ccc;
+		background: #fff;
+		text-align: left;
+	}
+
+	#mainnav li a{
+		position: relative;
+		display: block;
+		padding: 15px 25px;
+		border-bottom: 1px solid #ccc;
+		color: #4b4b4b;
+		font-weight: 400;
+	}
+	#mainnav li a:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		margin: -4px 0 0 0;
+		border-top: solid 2px #4b4b4b;
+		border-right: solid 2px #4b4b4b;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	#mainnav #sns li{
+		display: inline-block;
+	}
+	#mainnav #sns li a{
+		position: relative;
+		display: inline-block;
+		padding: 15px 10px 0;
+		border: 0;
+	}
+	#mainnav #sns li a:before{
+		border: 0;
+	}
+	.col4 li{
+		margin: 0 auto 50px;
+		display: block;
+		text-align: center;
+	}
+	section h2{
+		margin: 55px auto;
+    }
+    .last td:last-child {
+		border-bottom: solid 1px #ccc;
+		width: 100%;
+	}
+	.tbl-r02 {
+		width: 80%;
+	}
+	.tbl-r02 th, .tbl-r02 td {
+		border-bottom: none;
+		display: block;
+		width: 100%;
+	}
+}
